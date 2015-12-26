@@ -30,7 +30,7 @@ two Nabors
 Nabors=2
 yhat=Knn.predicte(X, Nabors)
 
-Kernel references----------------------------------------------------------------------------  
+#Kernel references----------------------------------------------------------------------------  
 1)Type:'rbf'
 Parameters=[gamma] 
 Formula:K(x, y) = exp(-gamma ||x-y||^2)  
