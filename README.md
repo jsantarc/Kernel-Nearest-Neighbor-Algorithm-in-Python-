@@ -1,23 +1,21 @@
-Kernel-Nearest-Neighbor-Algorithm-in-Python-
+#Kernel-Nearest-Neighbor-Algorithm-in-Python-
 This code extended to the well-known nearest-neighbor algorithm for classification so that kernels can be used 
 
 the distance is calculated by the following formula 
 Distance=k(x,x)+k(y,y)-2k(x,y)
 
 
-Object----------------------------------------------------
+#Object----------------------------------------------------
 obj=KernelKNNClassifier(Kernel)
 Kernel:name of kernal 
 Parameters: kernal parameters in not parameters just put 0
 see kernel type of more info 
 
-Methos---------------------------------------------------- 
+#Methos---------------------------------------------------- 
 fit(y,X)
 y:vector of labels
 X: vector of features with columns corresponding to sample and rows corresponding to features    
-
 predicte(self,Z,NaborsNumber)
-
 Z:Feature matrix of vectors to be predicted. Rows correspond to sample index  
 NaborsNumber: number of nabors for Majority vote 
 
@@ -28,7 +26,7 @@ Knn=KernelKNNClassifier(['sigmoid'],[1,1])
 X = np.array([[1, 1], [0, 1],[1, 0], [-1, -1], [1, -1],[-1, 0],[100,100]]);
 y=[1,1,1,0,0,0,2]
 Knn.fit(y,X)
-# two Nabors 
+two Nabors 
 Nabors=2
 yhat=Knn.predicte(X, Nabors)
 
