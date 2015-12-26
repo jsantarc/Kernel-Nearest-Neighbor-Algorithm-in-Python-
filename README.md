@@ -1,4 +1,4 @@
-# Kernel-Nearest-Neighbor-Algorithm-in-Python-
+Kernel-Nearest-Neighbor-Algorithm-in-Python-
 This code extended to the well-known nearest-neighbor algorithm for classification so that kernels can be used 
 
 the distance is calculated by the following formula 
@@ -30,7 +30,7 @@ y=[1,1,1,0,0,0,2]
 Knn.fit(y,X)
 # two Nabors 
 Nabors=2
-yhat=Y.predicte(X, Nabors)
+yhat=Knn.predicte(X, Nabors)
 
 Kernel references----------------------------------------------------------------------------  
 1)Type:'rbf'
@@ -43,14 +43,14 @@ Formula:K(x, y) = tanh(gamma  <X, Y>+c0)
 gamma : slope
 c0 is known as intercep
 
-3)Type:‘polynomial’
+3)Type:â€˜polynomialâ€™
 Parameters=[gamma,coef0,degree] 
 Formula:K(X, Y) = (gamma <X, Y> + coef0)^degree
 coef0 : int, default 1
 degree : int, default 3
-3)Type:‘lin’
+3)Type:â€˜linâ€™
 Formula:K(X, Y) =  <X, Y> 
   
-4)Type:‘cosine’
+4)Type:â€˜cosineâ€™
 L2-normalized dot product of vectors.
 K(X, Y) =  <X, Y>/||X||||Y||
