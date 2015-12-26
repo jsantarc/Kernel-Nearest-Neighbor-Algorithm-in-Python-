@@ -5,13 +5,13 @@ the distance is calculated by the following formula
 Distance=k(x,x)+k(y,y)-2k(x,y)
 
 
-#Object----------------------------------------------------
+#Object
 obj=KernelKNNClassifier(Kernel)
 Kernel:name of kernal 
 Parameters: kernal parameters in not parameters just put 0
 see kernel type of more info 
 
-#Methos---------------------------------------------------- 
+#Methos
 fit(y,X)
 y:vector of labels
 X: vector of features with columns corresponding to sample and rows corresponding to features    
@@ -21,7 +21,7 @@ NaborsNumber: number of nabors for Majority vote
 
 
 
-#example 
+#Example 
 Knn=KernelKNNClassifier(['sigmoid'],[1,1])
 X = np.array([[1, 1], [0, 1],[1, 0], [-1, -1], [1, -1],[-1, 0],[100,100]]);
 y=[1,1,1,0,0,0,2]
@@ -30,7 +30,7 @@ two Nabors
 Nabors=2
 yhat=Knn.predicte(X, Nabors)
 
-#Kernel references----------------------------------------------------------------------------  
+#Kernel references  
 1)Type:'rbf'
 Parameters=[gamma] 
 Formula:K(x, y) = exp(-gamma ||x-y||^2)  
